@@ -340,7 +340,7 @@ button.btn.btn-secondary.mb-3 a{
     height: 18px;
     display: block;
     margin-top: -2px;
-    z-index: 10000;
+    z-index: 100;
   }
 }
 @media (max-width: 825px) {
