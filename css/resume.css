@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Comfortaa', serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -31,13 +31,51 @@ h1 {
 h2 {
   font-size: 3.5rem;
 }
+ .zigzag {
+  background: linear-gradient(-135deg, #00ac99 5px, transparent 0) 0 5px, linear-gradient(135deg, #00ac99 5px, #fff 0) 0 5px;
+  background-color: red;
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 10px 10px;
+}
+
+.navigation-side{
+  float: left;
+  margin-left: -35px;
+  position: fixed;
+  padding-right: 20px;
+  height: 100%;
+}
+.horizontal_line{
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 1024px;
+}
+.fact{
+  width: 45%;
+  background-color: #00ac99;
+  color: white;
+  padding:20px;
+  margin-top: 50px;
+}
+.fact h6{
+  color: white;
+}
+.gray{
+  color: #343a40;
+}
+.teal{
+  color: #00ac99;
+}
   .fixed-top {
     z-index: 1030;
 }
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Open Sans', serif;
   font-size: 1.35rem;
 }
 #title{
@@ -45,11 +83,11 @@ font-size: 2rem;
 }
 
 .list-social-icons a {
-  color: #495057;
+  color: #00ac99;
 }
 
 .list-social-icons a:hover {
-  color: #4dada6;
+  color: #fb4f45;
 }
 
 .list-social-icons a .fa-lg {
@@ -77,7 +115,7 @@ font-size: 2rem;
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 15rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -139,7 +177,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #4dada6 !important;
+  background-color: #00ac99 !important;
 }
 
 .text-primary {
@@ -154,7 +192,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #fb4f45;
 }
 
 .iconGrid{
@@ -193,20 +231,20 @@ a:hover, a:focus, a:active {
 }
 .btn{
   margin-left: .25rem;
-  border-color: #495057;
-  background-color: #495057;
+  border-color: #00ac99;
+  background-color: #00ac99;
 }
 .btn:hover{
-  border-color: #4dada6;
-  background-color: #4dada6;
+  border-color: #fb4f45;
+  background-color: #fb4f45;
 }
 .btn:visited{
-  border-color: #495057;
-  background-color: #495057;
+  border-color: #00ac99;
+  background-color: #00ac99;
 }
 .btn:active{
-  border-color: #495057;
-  background-color: #495057;
+  border-color: #00ac99;
+  background-color: #00ac99;
 }
 .projBtn{
   text-decoration: none;
@@ -275,7 +313,7 @@ h6{
   color: #868e96;
     text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Open Sans', serif;
 }
 button.btn.btn-secondary.mb-3 a{
   color: white;
@@ -297,7 +335,21 @@ button.btn.btn-secondary.mb-3 a{
   z-index: 1040;
 }
 /*MEDIA QUERY MODAL MOBILE STYLING*/
+@media (max-width: 991px){
+    .navigation-side{
+    display: none;
+  }
+}
 @media (max-width: 825px) {
+    .col-sm-4{
+  flex: 100%;
+max-width: 100%;
+}
+.fact{
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 .side-1 {
     width: 75%;
     float: none;
@@ -306,8 +358,15 @@ button.btn.btn-secondary.mb-3 a{
     width: 100%;
     float: none;
 }
+h1{
+  font-size: 4rem;
+}
+h2{
+  font-size: 2.5rem;
+}
 }
 @media (max-width: 725px) {
+
 h5{
   font-size: 2rem;
 }
@@ -315,4 +374,5 @@ h5{
     width: 98%;
     float: none;
     margin-left: 5%;}
+}
 }
