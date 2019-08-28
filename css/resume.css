@@ -37,6 +37,7 @@ h2 {
   position: fixed;
   padding-right: 20px;
   height: 100%;
+  top: 0;
 }
 .horizontal_line{
   width: 95%;
