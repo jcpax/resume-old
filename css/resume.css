@@ -38,9 +38,6 @@ h2 {
   padding-right: 20px;
   height: 100%;
 }
-.nav-side-mobile{
-  display: none;
-}
 .horizontal_line{
   width: 95%;
   margin: 0 auto;
@@ -333,14 +330,6 @@ button.btn.btn-secondary.mb-3 a{
 @media (max-width: 991px){
   .navigation-side{
     display: none;
-  }
-  .nav-side-mobile{
-    width: 100%;
-    position: fixed;
-    height: 18px;
-    display: block;
-    margin-top: -2px;
-    z-index: 100;
   }
 }
 @media (max-width: 825px) {
